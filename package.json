@@ -1,0 +1,29 @@
+{
+  "name": "secure-notes-api",
+  "version": "1.0.0",
+  "description": "Secure note-taking REST API (Express + MongoDB/Mongoose + JWT) with role-based access, pagination, minimal indexes and aggregation pipelines.",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "seed:demo": "node scripts/seed.js --demo",
+    "explain": "node scripts/explain.js",
+    "test": "node --test test/api.test.js test/ratelimit.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.4",
+    "helmet": "^7.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.24.10"
+  }
+}
